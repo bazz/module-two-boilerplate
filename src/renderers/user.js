@@ -13,7 +13,7 @@ export function renderUserStat(info) {
 
   return `
     <div class="well well-lg">
-      <h3>${nickname}</h3>
+      <h3><span class="glyphicon glyphicon-user"></span> ${nickname}</h3>
       <div class="search-results_item">
         Количество боев: ${stats.battles}<br>
         Победы: ${stats.wins}<br>
