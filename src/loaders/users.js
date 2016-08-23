@@ -6,7 +6,7 @@ export default function loadUsers(username) {
   return fetch(url)
     .then((resp) => resp.json())
     .then((json) => {
-      if (json.status === "ok" && json.data.length) {
+      if (json.status === 'ok' && json.data.length) {
         return json.data
       } else {
         const error = json.error || {}

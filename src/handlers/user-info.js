@@ -16,7 +16,7 @@ export default function getUserInfo(event) {
   }
 
   if (event.target === event.currentTarget) {
-    return false;
+    return false
   }
 
   if (searchResults) {

@@ -1,6 +1,6 @@
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var appPath = path.join(__dirname, 'src');
+var path = require('path')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+var appPath = path.join(__dirname, 'src')
 
 
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel-loader']
+        loaders: ['babel-loader', 'eslint-loader']
       },
       {
         test: /\.css$/,

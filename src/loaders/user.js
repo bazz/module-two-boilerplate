@@ -7,7 +7,7 @@ export default function loadUserInfo(accountId) {
   return fetch(url)
     .then((resp) => resp.json())
     .then((json) => {
-      if (json.status === "ok") {
+      if (json.status === 'ok') {
         return json.data[accountId]
       } else {
         const error = json.error || {}

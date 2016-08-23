@@ -1,0 +1,8 @@
+{
+    "parser": "babel-eslint",
+    "rules": {
+      "semi": ["warn", "never"],
+      "quotes": ["error", "single"],
+      "no-trailing-spaces": ["warn"]
+    }
+}
