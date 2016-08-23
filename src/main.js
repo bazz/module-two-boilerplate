@@ -1,5 +1,4 @@
-import getUsersList from './handlers/user-list'
-import getUserInfo from './handlers/user-info'
+import mainHandler from './handlers/main'
 
 import 'main.css'
 
@@ -11,10 +10,4 @@ you don't have to pass application_id query param.
 It will be passed automatically via proxy server
 */
 
-document.addEventListener('DOMContentLoaded', () => {
-  const searchButton = document.getElementById('search')
-  const searchResults = document.querySelector('.search-results')
-
-  searchButton.addEventListener('click', getUsersList)
-  searchResults.addEventListener('click', getUserInfo)
-})
+document.addEventListener('DOMContentLoaded', mainHandler)
