@@ -1,6 +1,6 @@
-import mainHandler from './handlers/main'
+import mainHandler from './handlers/main';
 
-import 'main.css'
+import './main.css';
 
 /*
 full API description you can find here:
@@ -10,4 +10,4 @@ you don't have to pass application_id query param.
 It will be passed automatically via proxy server
 */
 
-document.addEventListener('DOMContentLoaded', mainHandler)
+document.addEventListener('DOMContentLoaded', mainHandler);

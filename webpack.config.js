@@ -1,43 +1,45 @@
-var path = require('path')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
-var appPath = path.join(__dirname, 'src')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const appPath = path.join(__dirname, 'src');
 
 
 module.exports = {
   resolve: {
-    root: appPath
+    root: appPath,
   },
   entry: {
-    bundle: 'main.js'
+    bundle: 'main.js',
   },
   output: {
     path: './dist',
-    filename: '[name].js'
+    filename: '[name].js',
   },
   devServer: {
     host: 'localhost',
-    port: 31337
+    port: 31337,
   },
   module: {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel-loader', 'eslint-loader']
+        loaders: ['babel-loader', 'eslint-loader'],
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css']
+        loaders: ['style', 'css'],
       },
       {
         test: /\.(png|jpg|gif)$/,
-        loader: 'file'
-      }
+        loader: 'file',
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.join(appPath, 'index.html')
-    })
-  ]
-}
+      template: path.join(appPath, 'index.html'),
+    }),
+  ],
+};

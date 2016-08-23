@@ -1,8 +1,11 @@
 {
     "parser": "babel-eslint",
+    "extends": "airbnb-base",
+    "env": {
+      "browser": true
+    },
     "rules": {
-      "semi": ["warn", "never"],
-      "quotes": ["error", "single"],
+      # "semi": ["error", "never"],
       "no-trailing-spaces": ["warn"]
     }
 }
