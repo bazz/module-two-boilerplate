@@ -9,7 +9,7 @@ import { handleError } from '../handlers/error';
 export default function getUserInfo(event) {
   const resultsNode = document.querySelector('.user-results');
   const accountId = event.target.dataset.accountId;
-  const searchResults = document.querySelector('.search-results .active');
+  const searchResults = document.querySelector('.js-search-results .active');
   const errorMessages = {
     ACCOUNT_ID_NOT_SPECIFIED: 'ID аккаунта не указан',
     INVALID_ACCOUNT_ID: 'Неверный ID аккаунта',

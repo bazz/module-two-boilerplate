@@ -8,11 +8,12 @@ export function handleError(error, node, errorMessages = {}) {
   const messages = Object.assign(errorMessages, {
     GENERIC: 'Произошла ошибка',
   });
+  const errorText = messages[error.message] || messages.GENERIC;
+
+  element.innerHTML = `<div class="alert alert-danger" role="alert">${errorText}</div>`;
 
   if (error instanceof PAPIError) {
-    element.innerHTML = messages[error.message] || messages.GENERIC;
-  } else {
-    element.innerHTML = messages.GENERIC;
-    throw (error);
+    return false;
   }
+  throw (error);
 }

@@ -6,7 +6,7 @@ import loadUsers from '../loaders/users';
 import { handleError } from '../handlers/error';
 
 export default function getUsersList() {
-  const resultsNode = document.querySelector('.search-results');
+  const resultsNode = document.querySelector('.js-search-results');
   const username = document.getElementById('username').value;
   const errorMessages = {
     INVALID_SEARCH: 'Ничего не найдено',

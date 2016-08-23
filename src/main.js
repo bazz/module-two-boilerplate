@@ -1,6 +1,7 @@
-import mainHandler from './handlers/main';
-
+import 'bootstrap/dist/css/bootstrap.css';
 import './main.css';
+
+import mainHandler from './handlers/main';
 
 /*
 full API description you can find here:

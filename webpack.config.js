@@ -24,14 +24,14 @@ module.exports = {
       {
         test: /\.js$/,
         loaders: ['babel-loader', 'eslint-loader'],
-        exclude: /node_modules/,
+        // exclude: /node_modules/,
       },
       {
         test: /\.css$/,
         loaders: ['style', 'css'],
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|jpg|gif|ttf|eot|svg|woff|woff2)$/,
         loader: 'file',
       },
     ],

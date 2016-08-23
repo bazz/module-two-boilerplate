@@ -19,18 +19,18 @@ body {
 }
 
 .results-container {
-  display: flex;
+  margin-top: 30px;
 }
 
 .search-results,
 .user-results {
-  flex: 1
+  /*flex: 1*/
 }
 
 .search-results_item {
-    margin: 8px 0 0;
+    /*margin: 8px 0 0;*/
 }
 
 .search-results_item.active{
-    background: pink
+    /*background: pink*/
 }
