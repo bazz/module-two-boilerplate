@@ -1,6 +1,8 @@
 import loadUserInfo from '../loaders/user'
-import renderSpinner from '../renderers/spinner'
-import { renderUserInfo } from '../renderers/user'
+import {
+  renderSpinner,
+  renderUserInfo
+ } from '../renderers'
 import { handleError } from '../handlers/error'
 
 

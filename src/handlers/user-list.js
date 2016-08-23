@@ -1,5 +1,7 @@
-import renderSpinner from '../renderers/spinner'
-import renderSearchResult from '../renderers/search'
+import {
+  renderSpinner,
+  renderSearchResult
+} from '../renderers'
 import loadUsers from '../loaders/users'
 import { handleError } from '../handlers/error'
 
